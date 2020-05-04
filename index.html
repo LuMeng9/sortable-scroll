@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jQuery UI Sortable - Default functionality</title>
+    <link rel="stylesheet" href="jquery-ui.css" />
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css" /> -->
+    <style>
+       #sortable {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 60%;
+      }
+      /*#sortable li {
+        margin: 0 3px 3px 3px;
+        padding: 0.4em;
+        padding-left: 1.5em;
+        font-size: 1.4em;
+        height: 18px;
+      }
+      #sortable li span {
+        position: absolute;
+        margin-left: -1.3em; */
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+      $(function() {
+        $("#sortable").sortable({
+          stop: function(event, ui) {
+            console.log("You can add function here!");
+          }
+        });
+        $("#sortable").disableSelection();
+      });
+    </script>
+  </head>
+  <body>
+    <ul id="sortable">
+      <li class="ui-state-default">
+        <div
+          class="adminshadowbox1"
+          style="overflow:hidden;border:1px solid #cccccc;padding:5px;margin-bottom:20px;background:white;"
+        >
+          <div
+            style="float:left;overflow:hidden;border:0px solid #cccccc;width:200px;min-height:100px;position:relative;"
+          >
+            <div
+              class="bindupload"
+              title="L2hvbWUzL3Ntb2Nrc3kyMDE1L3B1YmxpY19odG1sL2RhdGFzdG9yYWdlL3VwbG9hZHMvY2F0ZWdvcnlfaW1hZ2VzL2RfMTU4NjgzMDUxM18zNTc1OWNmMTYxLmpwZw=="
+              style="overflow:hidden;position:relative;border:1px solid #cccccc;"
+            >
+              <img
+                src="https://smocksy.com/application/direct/imgsizeme.php?imgfile=aHR0cHM6Ly9zbW9ja3N5LmNvbS9kYXRhc3RvcmFnZS91cGxvYWRzL2NhdGVnb3J5X2ltYWdlcy9kXzE1ODY4MzA1MTNfMzU3NTljZjE2MS5qcGc=&amp;imgw=198&amp;imgh=198&amp;aspect=1&amp;isencoded=1&amp;uid=5eaaed2507f9b"
+              />
+            </div>
+            <div
+              style="overflow:hidden;position:relative;font-size:12px;margin-top:5px;"
+            >
+              479px X 568px [type: .image/jpeg]
+            </div>
+          </div>
+          <div
+            style="margin-left:20px;float:left;overflow:hidden;border:0px solid #cccccc;width:450px;position:relative;"
+          >
+            <div style="overflow:hidden;">
+              <div class="pg_cs1">CatID:</div>
+              <div class="pg_cs2">
+                1586830513<span
+                  style="margin-left:40px;color:green;font-size:0.95em;"
+                  >[<a
+                    style="text-decoration:underline;color:green;vlink:green;alink:green;link:green;"
+                    href="https://smocksy.com/page/adminproducts&amp;catid=1586830513"
+                    >1 Products</a
+                  >]</span
+                >
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">Title:</div>
+              <div class="pg_cs2">
+                <input
+                  id="pg_bx_title_14"
+                  value="Holiday Tees"
+                  class="g_inputBox"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">SEO Keywords:</div>
+              <div class="pg_cs2">
+                <input
+                  id="pg_bx_seokey_14"
+                  value="Holiday Tees"
+                  class="g_inputBox"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">SEO Desc:</div>
+              <div class="pg_cs2">
+                <input
+                  id="pg_bx_seodesc_14"
+                  value="Holiday Tees"
+                  class="g_inputBox"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">Active:</div>
+              <div class="pg_cs2" style="width:100px;">
+                <select class="g_combo1" id="pg_bx_active_14"
+                  ><option selected="" value="1">Yes</option
+                  ><option value="0">No</option></select
+                >
+              </div>
+              <div
+                class="pg_cs1"
+                style="margin-left:10px;width:80px;color:green;"
+              >
+                active
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">Banner Image:</div>
+              <div class="pg_cs2" style="position:relative;">
+                <div
+                  class="bindupload"
+                  title="L2hvbWUzL3Ntb2Nrc3kyMDE1L3B1YmxpY19odG1sL2RhdGFzdG9yYWdlL3VwbG9hZHMvcHJvZHVjdF9iYW5uZXIvMTU4NjgzMDUxM181ZTk1MWNiMTZmYTk1LnBuZw=="
+                  style="overflow:hidden;position:relative;"
+                >
+                  <img
+                    src="https://smocksy.com/application/direct/imgsizeme.php?imgfile=aHR0cHM6Ly9zbW9ja3N5LmNvbS9kYXRhc3RvcmFnZS91cGxvYWRzL3Byb2R1Y3RfYmFubmVyLzE1ODY4MzA1MTNfNWU5NTFjYjE2ZmE5NS5wbmc=&amp;imgw=250&amp;imgh=0&amp;aspect=1&amp;isencoded=1&amp;uid=5eaaed250816f"
+                  />
+                </div>
+                <div style="overflow:hidden;position:relative;font-size:11px;">
+                  940px X 50px [type: .image/png]
+                </div>
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">&nbsp;</div>
+              <div class="pg_cs2" style="text-align:right;">
+                <input
+                  onclick="editcat(14);"
+                  class="button_1small"
+                  type="button"
+                  value="Save"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            onclick="pg_delCategory(14);"
+            style="text-align:center;cursor:pointer;background:#dddddd;border:1px solid #666666;overflow:hidden;padding:5px;position:relative;float:right;"
+          >
+            X
+          </div>
+        </div>
+      </li>
+      <li class="ui-state-default">
+        <div
+          class="adminshadowbox1"
+          style="overflow:hidden;border:1px solid #cccccc;padding:5px;margin-bottom:20px;background:white;"
+        >
+          <div
+            style="float:left;overflow:hidden;border:0px solid #cccccc;width:200px;min-height:100px;position:relative;"
+          >
+            <div
+              class="bindupload"
+              title="L2hvbWUzL3Ntb2Nrc3kyMDE1L3B1YmxpY19odG1sL2RhdGFzdG9yYWdlL3VwbG9hZHMvY2F0ZWdvcnlfaW1hZ2VzL2RfMTU4NjgzMDUxM18zNTc1OWNmMTYxLmpwZw=="
+              style="overflow:hidden;position:relative;border:1px solid #cccccc;"
+            >
+              <img
+                src="https://smocksy.com/application/direct/imgsizeme.php?imgfile=aHR0cHM6Ly9zbW9ja3N5LmNvbS9kYXRhc3RvcmFnZS91cGxvYWRzL2NhdGVnb3J5X2ltYWdlcy9kXzE1ODY4MzA1MTNfMzU3NTljZjE2MS5qcGc=&amp;imgw=198&amp;imgh=198&amp;aspect=1&amp;isencoded=1&amp;uid=5eaaed2507f9b"
+              />
+            </div>
+            <div
+              style="overflow:hidden;position:relative;font-size:12px;margin-top:5px;"
+            >
+              479px X 568px [type: .image/jpeg]
+            </div>
+          </div>
+          <div
+            style="margin-left:20px;float:left;overflow:hidden;border:0px solid #cccccc;width:450px;position:relative;"
+          >
+            <div style="overflow:hidden;">
+              <div class="pg_cs1">CatID:</div>
+              <div class="pg_cs2">
+                1586830513<span
+                  style="margin-left:40px;color:green;font-size:0.95em;"
+                  >[<a
+                    style="text-decoration:underline;color:green;vlink:green;alink:green;link:green;"
+                    href="https://smocksy.com/page/adminproducts&amp;catid=1586830513"
+                    >1 Products</a
+                  >]</span
+                >
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">Title:</div>
+              <div class="pg_cs2">
+                <input
+                  id="pg_bx_title_14"
+                  value="Holiday Tees"
+                  class="g_inputBox"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">SEO Keywords:</div>
+              <div class="pg_cs2">
+                <input
+                  id="pg_bx_seokey_14"
+                  value="Holiday Tees"
+                  class="g_inputBox"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">SEO Desc:</div>
+              <div class="pg_cs2">
+                <input
+                  id="pg_bx_seodesc_14"
+                  value="Holiday Tees"
+                  class="g_inputBox"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">Active:</div>
+              <div class="pg_cs2" style="width:100px;">
+                <select class="g_combo1" id="pg_bx_active_14"
+                  ><option selected="" value="1">Yes</option
+                  ><option value="0">No</option></select
+                >
+              </div>
+              <div
+                class="pg_cs1"
+                style="margin-left:10px;width:80px;color:green;"
+              >
+                active
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">Banner Image:</div>
+              <div class="pg_cs2" style="position:relative;">
+                <div
+                  class="bindupload"
+                  title="L2hvbWUzL3Ntb2Nrc3kyMDE1L3B1YmxpY19odG1sL2RhdGFzdG9yYWdlL3VwbG9hZHMvcHJvZHVjdF9iYW5uZXIvMTU4NjgzMDUxM181ZTk1MWNiMTZmYTk1LnBuZw=="
+                  style="overflow:hidden;position:relative;"
+                >
+                  <img
+                    src="https://smocksy.com/application/direct/imgsizeme.php?imgfile=aHR0cHM6Ly9zbW9ja3N5LmNvbS9kYXRhc3RvcmFnZS91cGxvYWRzL3Byb2R1Y3RfYmFubmVyLzE1ODY4MzA1MTNfNWU5NTFjYjE2ZmE5NS5wbmc=&amp;imgw=250&amp;imgh=0&amp;aspect=1&amp;isencoded=1&amp;uid=5eaaed250816f"
+                  />
+                </div>
+                <div style="overflow:hidden;position:relative;font-size:11px;">
+                  940px X 50px [type: .image/png]
+                </div>
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">&nbsp;</div>
+              <div class="pg_cs2" style="text-align:right;">
+                <input
+                  onclick="editcat(14);"
+                  class="button_1small"
+                  type="button"
+                  value="Save"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            onclick="pg_delCategory(14);"
+            style="text-align:center;cursor:pointer;background:#dddddd;border:1px solid #666666;overflow:hidden;padding:5px;position:relative;float:right;"
+          >
+            X
+          </div>
+        </div>
+      </li>
+      <li class="ui-state-default">
+        <div
+          class="adminshadowbox1"
+          style="overflow:hidden;border:1px solid #cccccc;padding:5px;margin-bottom:20px;background:white;"
+        >
+          <div
+            style="float:left;overflow:hidden;border:0px solid #cccccc;width:200px;min-height:100px;position:relative;"
+          >
+            <div
+              class="bindupload"
+              title="L2hvbWUzL3Ntb2Nrc3kyMDE1L3B1YmxpY19odG1sL2RhdGFzdG9yYWdlL3VwbG9hZHMvY2F0ZWdvcnlfaW1hZ2VzL2RfMTU4NjgzMDUxM18zNTc1OWNmMTYxLmpwZw=="
+              style="overflow:hidden;position:relative;border:1px solid #cccccc;"
+            >
+              <img
+                src="https://smocksy.com/application/direct/imgsizeme.php?imgfile=aHR0cHM6Ly9zbW9ja3N5LmNvbS9kYXRhc3RvcmFnZS91cGxvYWRzL2NhdGVnb3J5X2ltYWdlcy9kXzE1ODY4MzA1MTNfMzU3NTljZjE2MS5qcGc=&amp;imgw=198&amp;imgh=198&amp;aspect=1&amp;isencoded=1&amp;uid=5eaaed2507f9b"
+              />
+            </div>
+            <div
+              style="overflow:hidden;position:relative;font-size:12px;margin-top:5px;"
+            >
+              479px X 568px [type: .image/jpeg]
+            </div>
+          </div>
+          <div
+            style="margin-left:20px;float:left;overflow:hidden;border:0px solid #cccccc;width:450px;position:relative;"
+          >
+            <div style="overflow:hidden;">
+              <div class="pg_cs1">CatID:</div>
+              <div class="pg_cs2">
+                1586830513<span
+                  style="margin-left:40px;color:green;font-size:0.95em;"
+                  >[<a
+                    style="text-decoration:underline;color:green;vlink:green;alink:green;link:green;"
+                    href="https://smocksy.com/page/adminproducts&amp;catid=1586830513"
+                    >1 Products</a
+                  >]</span
+                >
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">Title:</div>
+              <div class="pg_cs2">
+                <input
+                  id="pg_bx_title_14"
+                  value="Holiday Tees"
+                  class="g_inputBox"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">SEO Keywords:</div>
+              <div class="pg_cs2">
+                <input
+                  id="pg_bx_seokey_14"
+                  value="Holiday Tees"
+                  class="g_inputBox"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">SEO Desc:</div>
+              <div class="pg_cs2">
+                <input
+                  id="pg_bx_seodesc_14"
+                  value="Holiday Tees"
+                  class="g_inputBox"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">Active:</div>
+              <div class="pg_cs2" style="width:100px;">
+                <select class="g_combo1" id="pg_bx_active_14"
+                  ><option selected="" value="1">Yes</option
+                  ><option value="0">No</option></select
+                >
+              </div>
+              <div
+                class="pg_cs1"
+                style="margin-left:10px;width:80px;color:green;"
+              >
+                active
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">Banner Image:</div>
+              <div class="pg_cs2" style="position:relative;">
+                <div
+                  class="bindupload"
+                  title="L2hvbWUzL3Ntb2Nrc3kyMDE1L3B1YmxpY19odG1sL2RhdGFzdG9yYWdlL3VwbG9hZHMvcHJvZHVjdF9iYW5uZXIvMTU4NjgzMDUxM181ZTk1MWNiMTZmYTk1LnBuZw=="
+                  style="overflow:hidden;position:relative;"
+                >
+                  <img
+                    src="https://smocksy.com/application/direct/imgsizeme.php?imgfile=aHR0cHM6Ly9zbW9ja3N5LmNvbS9kYXRhc3RvcmFnZS91cGxvYWRzL3Byb2R1Y3RfYmFubmVyLzE1ODY4MzA1MTNfNWU5NTFjYjE2ZmE5NS5wbmc=&amp;imgw=250&amp;imgh=0&amp;aspect=1&amp;isencoded=1&amp;uid=5eaaed250816f"
+                  />
+                </div>
+                <div style="overflow:hidden;position:relative;font-size:11px;">
+                  940px X 50px [type: .image/png]
+                </div>
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">&nbsp;</div>
+              <div class="pg_cs2" style="text-align:right;">
+                <input
+                  onclick="editcat(14);"
+                  class="button_1small"
+                  type="button"
+                  value="Save"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            onclick="pg_delCategory(14);"
+            style="text-align:center;cursor:pointer;background:#dddddd;border:1px solid #666666;overflow:hidden;padding:5px;position:relative;float:right;"
+          >
+            X
+          </div>
+        </div>
+      </li>
+      <li class="ui-state-default">
+        <div
+          class="adminshadowbox1"
+          style="overflow:hidden;border:1px solid #cccccc;padding:5px;margin-bottom:20px;background:white;"
+        >
+          <div
+            style="float:left;overflow:hidden;border:0px solid #cccccc;width:200px;min-height:100px;position:relative;"
+          >
+            <div
+              class="bindupload"
+              title="L2hvbWUzL3Ntb2Nrc3kyMDE1L3B1YmxpY19odG1sL2RhdGFzdG9yYWdlL3VwbG9hZHMvY2F0ZWdvcnlfaW1hZ2VzL2RfMTU4NjgzMDUxM18zNTc1OWNmMTYxLmpwZw=="
+              style="overflow:hidden;position:relative;border:1px solid #cccccc;"
+            >
+              <img
+                src="https://smocksy.com/application/direct/imgsizeme.php?imgfile=aHR0cHM6Ly9zbW9ja3N5LmNvbS9kYXRhc3RvcmFnZS91cGxvYWRzL2NhdGVnb3J5X2ltYWdlcy9kXzE1ODY4MzA1MTNfMzU3NTljZjE2MS5qcGc=&amp;imgw=198&amp;imgh=198&amp;aspect=1&amp;isencoded=1&amp;uid=5eaaed2507f9b"
+              />
+            </div>
+            <div
+              style="overflow:hidden;position:relative;font-size:12px;margin-top:5px;"
+            >
+              479px X 568px [type: .image/jpeg]
+            </div>
+          </div>
+          <div
+            style="margin-left:20px;float:left;overflow:hidden;border:0px solid #cccccc;width:450px;position:relative;"
+          >
+            <div style="overflow:hidden;">
+              <div class="pg_cs1">CatID:</div>
+              <div class="pg_cs2">
+                1586830513<span
+                  style="margin-left:40px;color:green;font-size:0.95em;"
+                  >[<a
+                    style="text-decoration:underline;color:green;vlink:green;alink:green;link:green;"
+                    href="https://smocksy.com/page/adminproducts&amp;catid=1586830513"
+                    >1 Products</a
+                  >]</span
+                >
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">Title:</div>
+              <div class="pg_cs2">
+                <input
+                  id="pg_bx_title_14"
+                  value="Holiday Tees"
+                  class="g_inputBox"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">SEO Keywords:</div>
+              <div class="pg_cs2">
+                <input
+                  id="pg_bx_seokey_14"
+                  value="Holiday Tees"
+                  class="g_inputBox"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">SEO Desc:</div>
+              <div class="pg_cs2">
+                <input
+                  id="pg_bx_seodesc_14"
+                  value="Holiday Tees"
+                  class="g_inputBox"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">Active:</div>
+              <div class="pg_cs2" style="width:100px;">
+                <select class="g_combo1" id="pg_bx_active_14"
+                  ><option selected="" value="1">Yes</option
+                  ><option value="0">No</option></select
+                >
+              </div>
+              <div
+                class="pg_cs1"
+                style="margin-left:10px;width:80px;color:green;"
+              >
+                active
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">Banner Image:</div>
+              <div class="pg_cs2" style="position:relative;">
+                <div
+                  class="bindupload"
+                  title="L2hvbWUzL3Ntb2Nrc3kyMDE1L3B1YmxpY19odG1sL2RhdGFzdG9yYWdlL3VwbG9hZHMvcHJvZHVjdF9iYW5uZXIvMTU4NjgzMDUxM181ZTk1MWNiMTZmYTk1LnBuZw=="
+                  style="overflow:hidden;position:relative;"
+                >
+                  <img
+                    src="https://smocksy.com/application/direct/imgsizeme.php?imgfile=aHR0cHM6Ly9zbW9ja3N5LmNvbS9kYXRhc3RvcmFnZS91cGxvYWRzL3Byb2R1Y3RfYmFubmVyLzE1ODY4MzA1MTNfNWU5NTFjYjE2ZmE5NS5wbmc=&amp;imgw=250&amp;imgh=0&amp;aspect=1&amp;isencoded=1&amp;uid=5eaaed250816f"
+                  />
+                </div>
+                <div style="overflow:hidden;position:relative;font-size:11px;">
+                  940px X 50px [type: .image/png]
+                </div>
+              </div>
+            </div>
+            <div class="pg_cls3">
+              <div class="pg_cs1">&nbsp;</div>
+              <div class="pg_cs2" style="text-align:right;">
+                <input
+                  onclick="editcat(14);"
+                  class="button_1small"
+                  type="button"
+                  value="Save"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            onclick="pg_delCategory(14);"
+            style="text-align:center;cursor:pointer;background:#dddddd;border:1px solid #666666;overflow:hidden;padding:5px;position:relative;float:right;"
+          >
+            X
+          </div>
+        </div>
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+      </li>
+      <li class="ui-state-default">
+        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+      </li>
+    </ul>
+  </body>
+</html>
